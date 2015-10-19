@@ -20,12 +20,8 @@ main {
     background: green;
     width: 25%;
     height: 25%;
-
-    overflow: hidden;
     border: 1px solid white;
     float: left;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -36,8 +32,6 @@ main {
     height: 25%;
     border: 1px solid white;
     float: right;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -51,7 +45,6 @@ main {
     }
 
     .rectangle-grid {
-
         width: 100%;
     }
 
