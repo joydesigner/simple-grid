@@ -4,9 +4,8 @@ main {
 
 .grid-container {
     max-width: 600px;
-    max-height: 300px;
-    margin: 50px auto;
-
+    max-height: 600px;
+    margin: auto;
     color: #ffffff;
     text-align: center;
     line-height: 150px;
@@ -16,30 +15,59 @@ main {
 
 .square-grid {
     background: green;
-    width: 146px;
-    height: 146px;
-    border: 2px solid white;
+    display: block;
+    width: 25%;
+    height: 25%;
+
+    overflow: hidden;
+    border: 1px solid white;
     float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 .rectangle-grid {
     background: tomato;
-    width:  296px;
-    height: 146px;
-    border: 2px solid white;
+    display: block;
+    width: 50%;
+    height: 25%;
+    border: 1px solid white;
     float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 
 @media screen and (max-device-width: 320px) {
     .grid-container {
         max-width: 300px;
     }
+
+    .square-grid {
+        width: 50%;
+    }
+
+    .rectangle-grid {
+
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-device-width: 480px) {
     .grid-container {
         max-width: 300px;
+    }
+
+    .square-grid {
+        width: 50%;
+    }
+
+    .rectangle-grid {
+
+        width: 100%;
     }
 }
 
