@@ -1,0 +1,45 @@
+main {
+    width: 100%;
+}
+
+.grid-container {
+    max-width: 600px;
+    max-height: 300px;
+    margin: 50px auto;
+
+    color: #ffffff;
+    text-align: center;
+    line-height: 150px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.square-grid {
+    background: green;
+    width: 146px;
+    height: 146px;
+    border: 2px solid white;
+    float: left;
+}
+
+.rectangle-grid {
+    background: tomato;
+    width:  296px;
+    height: 146px;
+    border: 2px solid white;
+    float: right;
+}
+
+
+@media screen and (max-device-width: 320px) {
+    .grid-container {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-device-width: 480px) {
+    .grid-container {
+        max-width: 300px;
+    }
+}
+
