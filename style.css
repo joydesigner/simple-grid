@@ -36,22 +36,10 @@ main {
 }
 
 
-@media screen and (max-device-width: 320px) {
-    .grid-container {
-        max-width: 300px;
-    }
-
-    .square-grid {
-        width: 50%;
-    }
-
-    .rectangle-grid {
-        width: 100%;
-    }
-
-}
-/** iphone viewport **/
-@media screen and (max-device-width: 480px) {
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
     .grid-container {
         max-width: 300px;
     }
@@ -64,6 +52,51 @@ main {
         width: 100%;
     }
 }
+
+/* ----------- iPhone 6 ----------- */
+
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .grid-container {
+        max-width: 300px;
+    }
+
+    .square-grid {
+        width: 50%;
+    }
+
+    .rectangle-grid {
+        width: 100%;
+    }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+
+/* Portrait */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+    .grid-container {
+        max-width: 300px;
+    }
+
+    .square-grid {
+        width: 50%;
+    }
+
+    .rectangle-grid {
+        width: 100%;
+    }
+}
+
 
 /** iPad viewport for portrait**/
 @media only screen
@@ -71,8 +104,8 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
     .grid-container {
-        width: 30vw;
-        height: 30vw;
+        width: 50vw;
+        height: 50vw;
 
         line-height: 80px;
         font-size: 20px;
