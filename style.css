@@ -5,7 +5,6 @@ main {
 .grid-container {
     width: 50vw;
     height: 50vw;
-
     margin: auto;
     color: #ffffff;
     text-align: center;
@@ -14,26 +13,37 @@ main {
     font-weight: bold;
 }
 
+.square-grid,
+.rectangle-grid {
+    height: 25%;
+    border: 4px solid #ffffff;
+    box-sizing: border-box;
+}
+
+
 
 
 .square-grid {
     background: green;
     width: 25%;
-    height: 25%;
-    border: 4px solid white;
     float: left;
-    box-sizing: border-box;
 }
 
+
+.square-grid:after,
+.rectangle-grid:after {
+    content: "",
+    display: table;
+    clear: both;
+}
 
 .rectangle-grid {
     background: tomato;
     width: 50%;
-    height: 25%;
-    border: 4px solid white;
     float: right;
-    box-sizing: border-box;
 }
+
+
 
 
 @media only screen
